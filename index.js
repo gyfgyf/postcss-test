@@ -200,7 +200,6 @@ module.exports = (options = {}) => {
             decl.value = value
           } else {
             if (decl.value.indexOf('px') === -1) return
-            console.log('decl.prop', decl.prop)
             if (!satisfyPropList(decl.prop)) return
 
             if (blacklistedSelector(opts.selectorBlackList, decl.parent.selector)) return
