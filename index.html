@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./output.css" />
+  <script>
+    !(function (n) {
+      function f() {
+        var e = n.document.documentElement,
+          w = e.getBoundingClientRect().width,
+          x = (40 * w) / 750;
+
+        e.style.fontSize = x >= 40 ? "40px" : x <= 20 ? "12px" : x + "px";
+      }
+      n.addEventListener("resize", function () {
+        f();
+      }),
+        f();
+    })(window);
+  </script>
+</head>
+
+<body>
+  <div class="ignore">ignore</div>
+  <div class="footer-btns">
+    <div class="footer-btns-content">
+      <div class="btn">
+        <img class="service-icon" src="https://img3.dian.so/lhc/2023/11/28/132w_132h_753C01701151179.png" />
+      </div>
+      <div class="scan-btn">
+        <img class="btn-icon" src="https://img3.dian.so/lhc/2023/09/06/63w_63h_88CF91693996106.png" />
+        <div class="scan-text">扫码充电</div>
+      </div>
+      <div class="btn">
+        <img class="user-icon" src="https://img3.dian.so/lhc/2023/11/28/132w_132h_4FF241701151209.png" />
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

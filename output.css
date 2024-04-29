@@ -1,0 +1,115 @@
+.footer-btns {
+  position: fixed;
+  bottom: 0.63636rem;
+  left: 0.63636rem;
+  right: 0.63636rem;
+  z-index: 999;
+  border-radius: 0.72727rem;
+  overflow: hidden;
+  /* 指定平台保留 */
+   /* #ifdef h5 */
+  box-shadow: 0 0.18182rem 0.72727rem 0 rgba(0, 0, 0, 0.08);
+  /* #endif  */
+
+  .footer-btns-content {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.63636rem;
+    background: #ffffff;
+    /* 指定平台剔除 */
+     /* #ifndef h5 */
+    /* #endif  */
+  }
+
+  .btn {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 2.45455rem;
+    width: 2.54545rem;
+
+    .service-icon {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .user-icon {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .btn-icon {
+      width: 1.09091rem;
+      height: 1.09091rem;
+    }
+
+    .btn-title {
+      color: #777777;
+      font-size: 0.54545rem;
+    }
+  }
+
+  .scan-btn {
+    width: auto;
+    margin-left: 0.63636rem;
+    margin-right: 0.63636rem;
+    flex: 1;
+    height: 2.54545rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 0.54545rem;
+    background: #24da5c;
+    color: #ffffff;
+    font-size: 0.81818rem;
+
+    .btn-icon {
+      width: 0.90909rem;
+      height: 0.86364rem;
+      flex-shrink: 0;
+    }
+
+    .scan-text {
+      margin-left: 0.45455rem;
+      font-size: 0.81818rem;
+      font-weight: 600;
+      color: #ffffff;
+      flex-shrink: 0;
+      min-width: 2.72727rem;
+      overflow: visible;
+    }
+
+    .space {
+      width: 0.04545rem;
+      display: inline-block;
+      height: 0.86364rem;
+      line-height: 1;
+    }
+  }
+}
+
+.ignore {
+  width: 120Px;
+  height: 2.72727rem;
+  background: red;
+  border-radius: 0.22727rem;
+  margin: 0rem 0rem;
+  padding-left: 0rem;
+  padding: 0;
+}
+
+.taro-test {
+  width: 100px;
+}
+.taro-test-test {
+  width: 100px;
+}
+
+/* postcss-pxtransform disable */
+.disable {
+  width: 200px;
+}
+

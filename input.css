@@ -1,0 +1,116 @@
+.footer-btns {
+  position: fixed;
+  bottom: 28px;
+  left: 28px;
+  right: 28px;
+  z-index: 999;
+  border-radius: 32px;
+  overflow: hidden;
+  /* 指定平台保留 */
+   /* #ifdef h5 */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
+  /* #endif  */
+
+  .footer-btns-content {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 28px;
+    background: #ffffff;
+    /* 指定平台剔除 */
+     /* #ifndef h5 */
+     background: red;
+    /* #endif  */
+  }
+
+  .btn {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 108px;
+    width: 112px;
+
+    .service-icon {
+      width: 88px;
+      height: 88px;
+    }
+
+    .user-icon {
+      width: 88px;
+      height: 88px;
+    }
+
+    .btn-icon {
+      width: 48px;
+      height: 48px;
+    }
+
+    .btn-title {
+      color: #777777;
+      font-size: 24px;
+    }
+  }
+
+  .scan-btn {
+    width: auto;
+    margin-left: 28px;
+    margin-right: 28px;
+    flex: 1;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #24da5c;
+    color: #ffffff;
+    font-size: 36px;
+
+    .btn-icon {
+      width: 40px;
+      height: 38px;
+      flex-shrink: 0;
+    }
+
+    .scan-text {
+      margin-left: 20px;
+      font-size: 36px;
+      font-weight: 600;
+      color: #ffffff;
+      flex-shrink: 0;
+      min-width: 120px;
+      overflow: visible;
+    }
+
+    .space {
+      width: 2px;
+      display: inline-block;
+      height: 38px;
+      line-height: 1;
+    }
+  }
+}
+
+.ignore {
+  width: 120Px;
+  height: 120px;
+  background: red;
+  border-radius: 10px;
+  margin: 0px 0px;
+  padding-left: 0px;
+  padding: 0;
+}
+
+.taro-test {
+  width: 100px;
+}
+.taro-test-test {
+  width: 100px;
+}
+
+/* postcss-pxtransform disable */
+.disable {
+  width: 200px;
+}
+
