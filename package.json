@@ -1,0 +1,33 @@
+{
+  "name": "postcss-test",
+  "version": "0.0.0",
+  "description": "PostCSS plugin test",
+  "keywords": ["postcss", "css", "postcss-plugin", "postcss-test"],
+  "scripts": {
+    "unit": "node --test index.test.js",
+    "test": "npm run unit && eslint ."
+  },
+  "author": "qipo <qipo@dian.so>",
+  "license": "MIT",
+  "repository": "https://github.com/gyfgyf/postcss-test",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.4.27"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "postcss": "^8.4.27"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": ["eslint:recommended"]
+  }
+}
