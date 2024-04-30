@@ -2,7 +2,12 @@
   "name": "postcss-test",
   "version": "0.0.0",
   "description": "PostCSS plugin test",
-  "keywords": ["postcss", "css", "postcss-plugin", "postcss-test"],
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "postcss-test"
+  ],
   "scripts": {
     "unit": "node --test index.test.js",
     "test": "npm run unit && eslint ."
@@ -28,6 +33,14 @@
       "node": true,
       "es6": true
     },
-    "extends": ["eslint:recommended"]
+    "extends": [
+      "eslint:recommended"
+    ]
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.3"
   }
 }

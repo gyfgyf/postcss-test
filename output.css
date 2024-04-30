@@ -1,24 +1,28 @@
 .footer-btns {
-  position: fixed;
-  bottom: 0.63636rem;
-  left: 0.63636rem;
-  right: 0.63636rem;
+  /* fixed */
+  /* bottom-7 */
+  bottom: 28px;
+  /* left-7 */
+  left: 28px;
+  /* right-7 */
+  right: 28px;
   z-index: 999;
-  border-radius: 0.72727rem;
+  border-radius: 32px;
   overflow: hidden;
   /* 指定平台保留 */
    /* #ifdef h5 */
-  box-shadow: 0 0.18182rem 0.72727rem 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
   /* #endif  */
 
   .footer-btns-content {
     width: auto;
     display: flex;
     justify-content: space-between;
-    padding: 0.63636rem;
+    padding: 28px;
     background: #ffffff;
     /* 指定平台剔除 */
      /* #ifndef h5 */
+     background: red;
     /* #endif  */
   }
 
@@ -27,65 +31,65 @@
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    height: 2.45455rem;
-    width: 2.54545rem;
+    height: 108px;
+    width: 112px;
 
     .service-icon {
-      width: 2rem;
-      height: 2rem;
+      width: 88px;
+      height: 88px;
     }
 
     .user-icon {
-      width: 2rem;
-      height: 2rem;
+      width: 88px;
+      height: 88px;
     }
 
     .btn-icon {
-      width: 1.09091rem;
-      height: 1.09091rem;
+      width: 48px;
+      height: 48px;
     }
 
     .btn-title {
       color: #777777;
-      font-size: 0.54545rem;
+      font-size: 24px;
     }
   }
 
   .scan-btn {
     width: auto;
-    margin-left: 0.63636rem;
-    margin-right: 0.63636rem;
+    margin-left: 28px;
+    margin-right: 28px;
     flex: 1;
-    height: 2.54545rem;
+    height: 112px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    border-radius: 0.54545rem;
+    border-radius: 24px;
     background: #24da5c;
     color: #ffffff;
-    font-size: 0.81818rem;
+    font-size: 36px;
 
     .btn-icon {
-      width: 0.90909rem;
-      height: 0.86364rem;
+      width: 40px;
+      height: 38px;
       flex-shrink: 0;
     }
 
     .scan-text {
-      margin-left: 0.45455rem;
-      font-size: 0.81818rem;
+      margin-left: 20px;
+      font-size: 36px;
       font-weight: 600;
       color: #ffffff;
       flex-shrink: 0;
-      min-width: 2.72727rem;
+      min-width: 120px;
       overflow: visible;
     }
 
     .space {
-      width: 0.04545rem;
+      width: 2px;
       display: inline-block;
-      height: 0.86364rem;
+      height: 38px;
       line-height: 1;
     }
   }
@@ -93,11 +97,11 @@
 
 .ignore {
   width: 120Px;
-  height: 2.72727rem;
+  height: 120px;
   background: red;
-  border-radius: 0.22727rem;
-  margin: 0rem 0rem;
-  padding-left: 0rem;
+  border-radius: 10px;
+  margin: 0px 0px;
+  padding-left: 0px;
   padding: 0;
 }
 
